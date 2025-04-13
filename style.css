@@ -1,0 +1,189 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+     line-height:1.5;    /*    gap between twwo lines    */
+    font-weight:400;
+    font-family: sans-serif;
+}
+
+nav{
+    top: 0px;
+    padding: 10px;
+    position: sticky;
+    box-shadow: 5px 5px 5px 5px rgba(1,1,1,0.05);
+    background: white;
+    margin-bottom: 35px;
+    z-index: 1000;
+}
+
+.navigation{
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav_container{
+    max-width: 1300px;
+    margin: 0px auto;   /* top bottom */
+
+
+}
+
+#bars{
+    font-size:32px;
+}
+#hero_container{
+    display:flex;
+    align-items: center;
+    gap:100px;
+    justify-content: center;
+}
+
+#hero{
+    
+    
+}
+
+#hero_content{
+    display:flex;
+    gap: 20px;    /* line-height:40 ;  */
+    flex-direction:column;
+}
+
+#hero_content h1{
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+#tag{
+    background-color: #149f39;
+    padding: 5px 10px;
+    color: white;
+    align-self:flex-start;                 /* align-self:flex-start; used for green color around text only*/
+}
+#explore_btn{
+    background-color: gold; /*#ffc066*/
+    align-self: flex-start;
+    border:none;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    opacity:0.8;
+}
+
+hr{
+    margin-top:30px;
+}
+
+
+
+#features{
+    display: flex;
+    gap:20px;
+    margin-top:100px;
+    margin-bottom:50px;
+    justify-content:center;
+   
+}
+/* FEATURES*/
+#feature{
+    display:flex;
+    gap:20px;
+    transition:0.2s;
+    padding:20px;
+}
+
+#feature:hover{
+box-shadow:5px 5px 5px rgba(1,1,1,0.05);
+}
+
+#feature img{
+    width:75px;
+}
+
+#divider{
+    border: 1px solid #ccc;
+    margin:20px 0;
+    /* 20px=for top-bottom and 0=left-right */
+}
+
+/* our menu */
+#menu{
+    display:flex;
+    flex-direction:column ;
+    gap:50px;
+   margin:50px 0;
+   align-items:center;
+   /* align-items is used to align multiple ele */
+}
+#menu #tag{
+    align-self:center;
+    /* align-self is used to align only single element */
+    
+}
+/* pictures */
+
+#img1{
+    grid-area:I1 ;
+}
+#img2{
+    grid-area:I2 ;
+}
+#img3{
+    grid-area:I3 ;
+}
+#img4{
+    grid-area:I4 ;
+}
+#img5{
+    grid-area:I5 ;
+}
+#img6{
+    grid-area:I6 ;
+}
+#img7{
+    grid-area:I7 ;
+}
+
+#grid{
+    display:grid;
+    gap:10px;
+    grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7" ;
+  }
+#grid-image{
+    border-radius: 10px;
+    transition:0.2s;
+ }
+ #grid-image:hover{
+    transform:scale(1.05);
+ }
+    /* footer */
+    #footer_container {
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        background-color: antiquewhite;
+      }
+
+
+
+
+
+
+
